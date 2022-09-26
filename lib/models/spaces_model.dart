@@ -54,89 +54,34 @@ class NBSpaces {
       double? d05,
       double? d15,
       double? d25,
-      double? d35}) {
-    if (d0 != null) {
-      _d0 = d0;
-    }
-    if (d1 != null) {
-      _d1 = d1;
-    }
-    if (d2 != null) {
-      _d2 = d2;
-    }
-    if (d3 != null) {
-      _d3 = d3;
-    }
-    if (d4 != null) {
-      _d4 = d4;
-    }
-    if (d5 != null) {
-      _d5 = d5;
-    }
-    if (d6 != null) {
-      _d6 = d6;
-    }
-    if (d7 != null) {
-      _d7 = d7;
-    }
-    if (d8 != null) {
-      _d8 = d8;
-    }
-    if (d9 != null) {
-      _d9 = d9;
-    }
-    if (d10 != null) {
-      _d10 = d10;
-    }
-    if (d12 != null) {
-      _d12 = d12;
-    }
-    if (d16 != null) {
-      _d16 = d16;
-    }
-    if (d20 != null) {
-      _d20 = d20;
-    }
-    if (d24 != null) {
-      _d24 = d24;
-    }
-    if (d32 != null) {
-      _d32 = d32;
-    }
-    if (d40 != null) {
-      _d40 = d40;
-    }
-    if (d48 != null) {
-      _d48 = d48;
-    }
-    if (d56 != null) {
-      _d56 = d56;
-    }
-    if (d64 != null) {
-      _d64 = d64;
-    }
-    if (d72 != null) {
-      _d72 = d72;
-    }
-    if (d80 != null) {
-      _d80 = d80;
-    }
-    if (d96 != null) {
-      _d96 = d96;
-    }
-    if (d05 != null) {
-      _d05 = d05;
-    }
-    if (d15 != null) {
-      _d15 = d15;
-    }
-    if (d25 != null) {
-      _d25 = d25;
-    }
-    if (d35 != null) {
-      _d35 = d35;
-    }
-  }
+      double? d35})
+      : _d0 = d0 ?? 0,
+        _d1 = d1 ?? 4,
+        _d2 = d2 ?? 8,
+        _d3 = d3 ?? 12,
+        _d4 = d4 ?? 16,
+        _d5 = d5 ?? 20,
+        _d6 = d6 ?? 24,
+        _d7 = d7 ?? 28,
+        _d8 = d8 ?? 32,
+        _d9 = d9 ?? 36,
+        _d10 = d10 ?? 40,
+        _d12 = d12 ?? 48,
+        _d16 = d16 ?? 64,
+        _d20 = d20 ?? 80,
+        _d24 = d24 ?? 96,
+        _d32 = d32 ?? 128,
+        _d40 = d40 ?? 160,
+        _d48 = d48 ?? 192,
+        _d56 = d56 ?? 224,
+        _d64 = d64 ?? 256,
+        _d72 = d72 ?? 288,
+        _d80 = d80 ?? 320,
+        _d96 = d96 ?? 384,
+        _d05 = d05 ?? 2,
+        _d15 = d15 ?? 6,
+        _d25 = d25 ?? 10,
+        _d35 = d35 ?? 14;
 
   double? get d0 => _d0;
   double? get d1 => _d1;

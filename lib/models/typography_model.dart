@@ -32,20 +32,20 @@ class NBFontSizes {
       double? i7xl,
       double? i8xl,
       double? i9xl}) {
-    _i2xs = i2xs;
-    _xs = xs;
-    _sm = sm;
-    _md = md;
-    _lg = lg;
-    _xl = xl;
-    _i2xl = i2xl;
-    _i3xl = i3xl;
-    _i4xl = i4xl;
-    _i5xl = i5xl;
-    _i6xl = i6xl;
-    _i7xl = i7xl;
-    _i8xl = i8xl;
-    _i9xl = i9xl;
+    _i2xs = i2xs ?? 10.0;
+    _xs = xs ?? 12.0;
+    _sm = sm ?? 14.0;
+    _md = md ?? 16.0;
+    _lg = lg ?? 18.0;
+    _xl = xl ?? 20.0;
+    _i2xl = i2xl ?? 24.0;
+    _i3xl = i3xl ?? 30.0;
+    _i4xl = i4xl ?? 36.0;
+    _i5xl = i5xl ?? 48.0;
+    _i6xl = i6xl ?? 60.0;
+    _i7xl = i7xl ?? 72.0;
+    _i8xl = i8xl ?? 96.0;
+    _i9xl = i9xl ?? 128.0;
   }
 
   double? get i2xs => _i2xs;

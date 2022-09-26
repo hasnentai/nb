@@ -43,6 +43,11 @@ class NativeBaseTheme {
         borders = borders ?? nbBorders,
         radiuses = radiuses ?? nbRadius;
 
+  NativeBaseTheme merge(NativeBaseTheme theme, NativeBaseTheme extendedTheme) {
+    return NativeBaseTheme(
+        borders: NBBorders(i0: extendedTheme.borders.i0 ?? theme.borders.i0));
+  }
+
   Map<String, dynamic> toJson() {
     return {
       "fontSize": fontSize,

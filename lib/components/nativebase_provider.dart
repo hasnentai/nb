@@ -4,18 +4,20 @@ import 'package:nativebase_flutter/nativebase_flutter.dart';
 class NativeBaseProvider extends StatefulWidget {
   final NativeBaseTheme theme;
   final Widget child;
+  final NativeBaseTheme? extendedTheme;
 
   const NativeBaseProvider({
     Key? key,
     required this.theme,
     required this.child,
+    this.extendedTheme,
   }) : super(key: key);
 
   static NativeBaseTheme of(BuildContext context) {
-    final NativeBaseProvider inheritedTheme =
-        context.findAncestorWidgetOfExactType<NativeBaseProvider>()!;
+    final NativeBaseTheme theme =
+        context.findAncestorWidgetOfExactType<NativeBaseProvider>()!.theme;
 
-    return inheritedTheme.theme;
+    return theme;
   }
 
   @override
